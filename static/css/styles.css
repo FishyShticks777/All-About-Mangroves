@@ -10,6 +10,9 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+  
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7817,6 +7820,18 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.mb-7 {
+  margin-bottom: 12rem;
+}
+
+.mb-8 {
+  margin-bottom: 24rem;
+}
+
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -11111,7 +11126,7 @@ body {
   }
 }
 
-.about-section {
+.about-section, .challenges-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
@@ -11200,3 +11215,7 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+
+
