@@ -11126,10 +11126,20 @@ body {
   }
 }
 
-.about-section, .challenges-section, .impact-section {
+
+.about-section, .challenges-section, .impact-section{
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
+.maps-section .map-iframe {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 650px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
 .about-section p {
   margin-bottom: 5rem;
 }
@@ -11215,7 +11225,6 @@ body {
 .footer {
   padding: 5rem 0;
 }
-
 
 
 
