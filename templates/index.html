@@ -38,7 +38,7 @@
                         <h2 class="text-white mb-4">An Introduction to Mangroves</h2>
                         <p class="text-white-50">
                             
-                                Mangrove forests are some of the most underrated biomes ever. Despite covering a very low portion of earth’s land area (roughly 0.01%), mangrove forests play crucial roles in the world. This website will explore the ways mangrove forests impact human cultures, food habits and transportation. It will also cover settlement patterns, environmental impact and the challenges people face in this environment. In this site, we will specifically focus on two mangrove regions. Our focus will be on the Sundarbans, and the Madagascar mangroves.
+                                Mangrove forests are some of the more overlooked biomes out there. Mangroves are trees that grow in the brackish waters off many coasts. Their roots are submerged at high tide but at low tide they stick out of the mud, making the trees look as if they are on stilts. They are home to a wide variety of specially adapted creatures that have evolved to survive in this unique environment.  Despite covering a very low portion of earth’s land area (roughly 0.01%), mangrove forests play crucial roles in the world. This website will explore the ways mangrove forests impact human cultures, food habits and transportation. It will also cover settlement patterns, environmental impact and the challenges people face in this environment. In this site, we will specifically focus on two mangrove regions. Our focus will be on the Sundarbans, and the Madagascar mangroves.
 
                         </p>
                     </div>
@@ -134,7 +134,7 @@
                 <div class="col-xl-7 col-lg-5 col-md-10 mb-5"><img class="img-fluid mb-3 mb-lg-0" src="./static/assets/img/impact_section.jpg" alt="..." style="border-radius: 30px;"/></div>
                 <div class="col-xl-9 col-lg-8 col-md-10 col-sm-9 mb-8">
                     <div class="featured-text text-center text-lg-left">
-                        <p class="mb-0 text-white">Communities in the Sundarbans and the Madagascar Mangroves heavily rely on the forest for their livelihood. In Madagascar, the trees themselves are the main treasure, providing energy (by turning them into charcoal) and wood. However, in the Madagascar mangrove forests, the trees are heavily exploited for resources. Mangrove exploitation causes soil erosion, subsidence and loss of soil carbon which enters into the atmosphere contributing to pollution and climate change. Many NGOs try to help prevent mangrove deforestation, and help to plant more trees. The people in the Sunderbans have taken advantage of the shrimp population, gathering eggs for shrimp farming, making Bangladesh one of the world’s top shrimp producers. This limits shrimp reproduction and disrupts marine ecosystems. They also need to use salt water which is absorbed by the sand, contaminating the fresh water reserves. But it isn’t just shrimp that gets exploited. During the dry season, one village bustles with 15,000 fishermen who are hogging the fish and drying them for export, further contributing to the destruction of the once thriving fish population.</p>
+                        <p class="mb-0 text-white">Communities in the Sundarbans and the Madagascar Mangroves heavily rely on the forest for their livelihood. In Madagascar, the trees themselves are the main treasure, providing energy (by turning them into charcoal) and wood. However, in the Madagascar mangrove forests, the trees are heavily exploited for resources. Mangrove exploitation causes soil erosion, subsidence and loss of soil carbon which enters into the atmosphere contributing to pollution and climate change. The mangroves in Madagascar cover around 2% of the world’s mangroves (estimated 2 to 3 thousand km²), making these ecosystems highly important. Many NGOs try to help prevent mangrove deforestation, and help to plant more trees. On September 21st, 2026, Rainforest Trust committed $10 million (USD), to protect Madagascar’s biodiversity. Despite charcoal and firewood energizing nearly all of Madagascar, these materials are hardly exported abroad. The people in the Sunderbans have taken advantage of the shrimp population, gathering eggs for shrimp farming, making Bangladesh one of the world’s top shrimp producers. This limits shrimp reproduction and disrupts marine ecosystems. They also need to use salt water which is absorbed by the sand, contaminating the fresh water reserves. But it isn’t just shrimp that gets exploited. During the dry season, one village bustles with 15,000 fishermen who are hogging the fish and drying them for export, further contributing to the destruction of the once thriving fish population.</p>
                     </div>
                 </div>
             </div>
@@ -143,12 +143,17 @@
         <section class="maps-section">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center justify-content-center">
-                    <div class="col-12 mb-5">
-                        <h2 class="text-center"><b>Population and Mangrove Distribution in Madagascar</b></h2>
+                    <div class="col-12 mb-5 text-center">
+                        <h2 class="mb-5"><b>Population and Mangrove Distribution in Madagascar</b></h2>
+                        <br>
+                        <button class="btn btn-primary" id="loadmap" onclick="LoadMap()">Load Map</button>
+                        <br>
                     </div>
                     <div class="col-12 mb-5">
-                        <iframe class="map-iframe" src="https://map.unbiodiversitylab.org/location/UNBL/madagascar/UNBL.metrics?basemap=dark&coordinates=-18.4848402,41.4509906,4.8&layers=UNBL.layer.worldpop-global1-population-2000-2020_100_%7B%22current%22%3A%2261ebdb38-51ae-46ea-b21d-036da0912275%22%7D,UNBL.layer.gmw-mangrove-forests-parent_100_%7B%22current%22%3A%2276c98399-03a0-432d-8d97-689eff16f43c%22%7D&projection=mercator" title="Population and Mangrove Distribution in Madagascar"></iframe>
+                        <iframe class="map-iframe" id="map-iframe" src="about:blank"  title="Population and Mangrove Distribution in Madagascar"></iframe>
+                        
                     </div>
+                    <p class="text-black">*The population density is people per 100m²</p>
                 </div>
             </div>
         </section>
@@ -195,7 +200,7 @@
                             <tr>
                                 <td class="tg-brw4">Energy</td>
                                 <td class="tg-brw4">In the Sundarbans, the main energy source comes from fuelwood taken from the mangrove forests. This provides heat for cooking and warmth.</td>
-                                <td class="tg-brw4">In Madagascar, the total energy supply comes from various different sources. Nearly all the energy in Madagascar comes from biofuels and waste, with the rest few coming from oils, coal, and the lowest being hydropower. Over 400,000 TJ (terajoules) of electricity have been supplied in Madagascar.</td>
+                                <td class="tg-brw4">In Madagascar, the total energy supply comes from various different sources. Nearly all the energy in Madagascar comes from biofuels and waste, with the rest few coming from oils, coal, and the lowest being hydropower. Over 400,000 TJ (terajoules) of electricity is supplied in Madagascar every year.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -207,7 +212,7 @@
         <br>
 
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">This website was co-created by Rohit Bhattacharya and Maren Stanger. Our bibliograhy is <a href="{{url_for('sources')}}">here</a></div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">This website was co-created by Rohit Bhattacharya and Maren Stanger. Our sources are <a href="{{url_for('sources')}}">here</a></div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -217,5 +222,13 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            function LoadMap() {
+                document.getElementById("map-iframe").src = "https://map.unbiodiversitylab.org/location/UNBL/madagascar/UNBL.metrics?basemap=dark&coordinates=-18.4848402,41.4509906,4.8&layers=UNBL.layer.worldpop-global1-population-2000-2020_100_%7B%22current%22%3A%2261ebdb38-51ae-46ea-b21d-036da0912275%22%7D,UNBL.layer.gmw-mangrove-forests-parent_100_%7B%22current%22%3A%2276c98399-03a0-432d-8d97-689eff16f43c%22%7D&projection=mercator"
+                document.getElementById("loadmap").style.visibility = "hidden";
+            }
+        </script>
+
     </body>
 </html>
