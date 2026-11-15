@@ -11,6 +11,9 @@ def index():
 def sources():
     return render_template("bibliography.html")
 
+@app.route('/quiz')
+def quiz():
+    return render_template("quiz.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
